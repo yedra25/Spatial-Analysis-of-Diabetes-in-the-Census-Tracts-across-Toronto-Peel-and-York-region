@@ -6,7 +6,7 @@ This project analyzes the spatial distribution of diabetes across census tracts 
 
 The study highlights spatial inequalities in health outcomes and demonstrates how GIS can support public health decision-making.
 
-Objective
+## Objective
 
 Diabetes prevalence is unevenly distributed across the Greater Toronto Area. This project aims to:
 
@@ -24,7 +24,7 @@ Recreational facilities (ODRSF, 2021)
 Study Area: Toronto, Peel, and York Regions
 Total units: ~1059 census tracts
 
-Methods
+## Methods
 Data cleaning and preprocessing (handling nulls, standardizing variables)
 Spatial weights matrix (Queen contiguity)
 Exploratory Spatial Data Analysis (ESDA)
@@ -34,10 +34,11 @@ Bivariate Moran’s I for spatial relationships
 Correlation and regression analysis (OLS)
 Spatial regression models (Spatial Lag & Spatial Error)
 Clustering (K-means & Ward’s method)
-Key Findings
+
+## Key Findings
 Diabetes shows significant spatial clustering (Moran’s I ≈ 0.53)
 Higher diabetes rates are associated with:
-Higher % of population with no certificate
+Higher % of the population with no certificate
 Lower postsecondary education
 Weak relationship with high school education alone
 Strong spatial divide:
@@ -50,12 +51,13 @@ Python (PySAL, Pandas, NumPy, Matplotlib)
 Spatial statistics (Moran’s I, LISA)
 Regression modeling
 GIS data visualization
-Limitations
+
+## Limitations
 Data from different years (2021–2025 mismatch)
 Missing census tracts in clustering analysis
 Use of aggregated data (ecological fallacy risk)
 Limited explanatory power (low R²)
 Does not include factors like diet, ethnicity, or healthcare access
-Conclusion
 
+## Conclusion
 The analysis shows that diabetes prevalence is not random but spatially structured and strongly linked to socioeconomic conditions. Education, particularly postsecondary attainment, plays a key role, but broader environmental and social factors also contribute to health disparities.
